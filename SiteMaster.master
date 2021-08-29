@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteMaster.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="CSS/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>MastePage</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+        .auto-style325 {
+            max-width: 100%;
+            margin: auto;
+            height: auto;
+            margin-top: 130px;
+        }
+
+        .auto-style327 {
+            margin-left: 20px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <form id="form1" runat="server">
+
+        <div class="navbar">
+            <asp:ImageButton ID="ImgLeft" runat="server" OnClick="ImgLeft_Click" ImageUrl="~/Images/BudgetFoods.svg" Width="250px" Height="80px"/>
+
+            <a href="#userd" id="basket" class="fa fa-shopping-cart fa-2x" aria-hidden="true" style="margin-top: 25px"></a>
+
+            <asp:HyperLink ID="userIconin" runat="server" CssClass="fa fa-user fa-2x" Style="margin-top: 25px" Text="Sign in" NavigateUrl="~/Login.aspx" Target="_blank" />
+            <asp:LinkButton ID="userIconout" runat="server" CssClass="fa fa-user fa-2x" OnClick="userIconout_Click">Sign out</asp:LinkButton>
+
+            <asp:Label ID="userText" runat="server" aria-hidden="true" Height="16px" Width="200px" CssClass="auto-style327"></asp:Label>
+
+            
+        </div>
+
+        <div class="topnav" style="width: 100%; margin-top: 50px">
+
+            <asp:HyperLink ID="MyAccount" runat="server" Font-Underline="false"
+                NavigateUrl="~/MyAccount.aspx" > MyAccount</asp:HyperLink>
+
+            <asp:HyperLink ID="Management" runat="server" Font-Underline="false"
+                NavigateUrl="~/Stock.aspx" Visible="False"> Management</asp:HyperLink>
+
+            <asp:HyperLink ID="teams" runat="server" Font-Underline="false"
+                NavigateUrl="~/Teams.aspx"> Teams</asp:HyperLink>
+
+            <asp:HyperLink ID="FAQ" runat="server" Font-Underline="false"
+                NavigateUrl="~/faq.aspx"> FAQ</asp:HyperLink>
+
+            <asp:HyperLink ID="products" runat="server" Font-Underline="false"
+                NavigateUrl="~/Product.aspx"> Products</asp:HyperLink>
+
+            <asp:HyperLink ID="home" runat="server" class="active" Font-Underline="false"
+                NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+        </div>
+        <div class="auto-style325">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <table>
+            <tr>
+                <td colspan="2">
+                    <footer style="text-align: center">
+                        <h6>Copyright &copy; 2020 BudgetFoods, all rights reserved.</h6>
+                    </footer>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>

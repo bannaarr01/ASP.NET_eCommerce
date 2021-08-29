@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/Images/Banner01.png</ImageUrl>
+    <NavigateUrl></NavigateUrl>
+    <AlternateText></AlternateText>
+    <Impressions>50</Impressions>
+    <Keyword></Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/Images/Banner02.png</ImageUrl>
+    <NavigateUrl></NavigateUrl>
+    <AlternateText></AlternateText>
+    <Impressions>42</Impressions>
+    <Keyword></Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/Images/Banner03.png</ImageUrl>
+    <NavigateUrl></NavigateUrl>
+    <AlternateText></AlternateText>
+    <Impressions>30</Impressions>
+    <Keyword></Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/Images/Banner04.png</ImageUrl>
+    <NavigateUrl></NavigateUrl>
+    <AlternateText></AlternateText>
+    <Impressions>20</Impressions>
+    <Keyword></Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/Images/Banner05.png</ImageUrl>
+    <NavigateUrl></NavigateUrl>
+    <AlternateText></AlternateText>
+    <Impressions>40</Impressions>
+    <Keyword></Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/Images/Banner06.png</ImageUrl>
+    <NavigateUrl></NavigateUrl>
+    <AlternateText></AlternateText>
+    <Impressions>60</Impressions>
+    <Keyword></Keyword>
+  </Ad>
+</Advertisements>
